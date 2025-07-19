@@ -73,7 +73,7 @@ const handleUserPageChange = (newPage) => {
 }, [page]);  // page-dependent
 
 
-  const filteredUsers = users.filter((user) =>
+  const filteredUsers = allUsers.filter((user) =>
     user.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
